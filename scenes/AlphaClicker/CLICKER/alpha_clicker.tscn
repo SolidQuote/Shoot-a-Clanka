@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://du5kjbjhn2g10"]
+[gd_scene load_steps=5 format=3 uid="uid://du5kjbjhn2g10"]
 
 [ext_resource type="Script" uid="uid://1jl68udrs8ei" path="res://scenes/AlphaClicker/CLICKER/alpha_clicker.gd" id="1_ltnot"]
 [ext_resource type="FontFile" uid="uid://mwaw2uupd17s" path="res://scenes/Starjedi.ttf" id="2_2e2fr"]
 [ext_resource type="AudioStream" uid="uid://dmor4f7nuafsf" path="res://scenes/clanker.mp3" id="3_c3h5s"]
+[ext_resource type="Texture2D" uid="uid://bk5cprwncyf8x" path="res://scenes/360_F_1293450787_NAfWhWHFRmvz10FhgQSgQceHLG1P4bA5.jpg" id="4_yqvsd"]
 
 [node name="AlphaClicker" type="Control" node_paths=PackedStringArray("label")]
 layout_mode = 3
@@ -52,5 +53,11 @@ text = "Shoot a Clanka"
 
 [node name="Click" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_c3h5s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(589, 342)
+scale = Vector2(1.93131, 1.97852)
+texture = ExtResource("4_yqvsd")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
