@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctslsnckadnt0"]
+
+[ext_resource type="Script" uid="uid://xv8nmj83y2t3" path="res://titlescreen.gd" id="1_sa3yf"]
+[ext_resource type="FontFile" uid="uid://mwaw2uupd17s" path="res://scenes/Starjedi.ttf" id="2_s4lrb"]
+
+[node name="Title Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sa3yf")
+
+[node name="Start Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 465.0
+offset_top = 274.0
+offset_right = 678.0
+offset_bottom = 364.0
+theme_override_fonts/font = ExtResource("2_s4lrb")
+text = "Start"
+
+[connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
