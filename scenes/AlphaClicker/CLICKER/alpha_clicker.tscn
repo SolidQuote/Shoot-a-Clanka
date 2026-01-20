@@ -838,7 +838,7 @@ Button/styles/hover = null
 Button/styles/normal = null
 Button/styles/pressed = null
 
-[node name="AlphaClicker" type="Control"]
+[node name="AlphaClicker" type="Control" node_paths=PackedStringArray("label")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -850,6 +850,7 @@ offset_bottom = -9.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ltnot")
+label = NodePath("Label")
 metadata/_edit_horizontal_guides_ = [-136.0, -172.0]
 
 [node name="Label" type="Label" parent="."]
@@ -861,10 +862,9 @@ offset_bottom = 23.0
 grow_horizontal = 2
 theme_type_variation = &"HeaderLarge"
 theme_override_fonts/font = ExtResource("2_2e2fr")
-text = "Clankers: 0"
+text = "Clankers: <value>"
 horizontal_alignment = 1
 vertical_alignment = 1
-script = ExtResource("1_ltnot")
 
 [node name="Button" type="Button" parent="."]
 custom_minimum_size = Vector2(320, 80)
@@ -896,7 +896,7 @@ stream = ExtResource("3_c3h5s")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -1
-position = Vector2(589, 339)
+position = Vector2(589, 342)
 scale = Vector2(1.93131, 1.97852)
 texture = ExtResource("4_yqvsd")
 

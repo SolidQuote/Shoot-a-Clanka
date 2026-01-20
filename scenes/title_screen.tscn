@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctslsnckadnt0"]
+[gd_scene load_steps=3 format=3 uid="uid://ctslsnckadnt0"]
 
 [ext_resource type="Script" uid="uid://xv8nmj83y2t3" path="res://titlescreen.gd" id="1_sa3yf"]
 [ext_resource type="FontFile" uid="uid://mwaw2uupd17s" path="res://scenes/Starjedi.ttf" id="2_s4lrb"]
-[ext_resource type="Script" uid="uid://1jl68udrs8ei" path="res://scenes/AlphaClicker/CLICKER/alpha_clicker.gd" id="3_s4lrb"]
 
 [node name="Title Screen" type="Control"]
 layout_mode = 3
@@ -21,6 +20,5 @@ offset_right = 678.0
 offset_bottom = 364.0
 theme_override_fonts/font = ExtResource("2_s4lrb")
 text = "Start"
-script = ExtResource("3_s4lrb")
 
 [connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]

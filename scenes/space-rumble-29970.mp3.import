@@ -3,12 +3,11 @@
 importer="mp3"
 type="AudioStreamMP3"
 uid="uid://yg0f54m0h08x"
-path="res://.godot/imported/space-rumble-29970.mp3-cd85870251db9330ddcc3730e830ae1b.mp3str"
+valid=false
 
 [deps]
 
 source_file="res://scenes/space-rumble-29970.mp3"
-dest_files=["res://.godot/imported/space-rumble-29970.mp3-cd85870251db9330ddcc3730e830ae1b.mp3str"]
 
 [params]
 
